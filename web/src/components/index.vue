@@ -1,10 +1,11 @@
 <template>
   <div class="index-box">
     <!-- 头部 -->
-    <div class="header-box">
+    <Head></Head>
+    <!-- <div class="header-box">
       <img src="../assets/pic.jpg" alt='头像'>
       <p class="intro">公路_陷阱</p>
-    </div>
+    </div> -->
     <!-- 导航切换 -->
     <ul class="nav-box">
       <!-- <li >JS小结</li>
@@ -197,9 +198,13 @@ a {
 import { dateFormate } from "../util.js";
 import { getBlogList, typelist, linkList } from "../service/service.js";
 import { Indicator } from "mint-ui";
+import Head from './head'
 import "mint-ui/lib/style.css";
 let ROUTE = {};
 export default {
+  components:{
+    Head
+  },
   data() {
     return {
       listData: [],

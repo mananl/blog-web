@@ -41,4 +41,7 @@ input,textarea{
 .markdown-body ol, .markdown-body ul{
   padding-left: 0 !important;
 }
+.mint-toast{
+  z-index: 100000 !important;
+}
 </style>

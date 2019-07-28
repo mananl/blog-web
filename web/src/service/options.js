@@ -2,7 +2,8 @@ import axios from 'axios'
 
 let instance = axios.create();
 
-instance.baseURL = 'http://39.97.162.134:8001';
+instance.baseURL = window.location.hostname=='localhost'?'http://localhost:8001':'http://39.97.162.134:8001';
+
 instance.defaults.timeout = 2500;
 
 // 添加请求拦截器

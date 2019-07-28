@@ -16,3 +16,13 @@ export function typelist (callback,errfun){
 export function linkList (callback,errfun){
     instance.get(instance.baseURL+'/blog/linkList').then(res => callback(res)).catch(err=>errfun(err))
 }
+
+//获取评论列表
+export function getCommentList (params,callback){
+    instance.get(instance.baseURL+'/comment/list',{params}).then(res => callback(res))
+}
+
+//添加评论
+export function addComment (params,callback){
+    instance.post(instance.baseURL+'/comment/add',params).then(res => callback(res))
+}
