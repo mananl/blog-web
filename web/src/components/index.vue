@@ -3,7 +3,7 @@
     <!-- 头部 -->
     <div class="header-box">
       <img src="../assets/pic.jpg" alt='头像'>
-      <p class="intro">满是阳光的前端打杂人员</p>
+      <p class="intro">公路_陷阱</p>
     </div>
     <!-- 导航切换 -->
     <ul class="nav-box">
